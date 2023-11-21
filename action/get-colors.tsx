@@ -1,5 +1,7 @@
 import { Color } from "@/types"
 
+export const revalidate = 1;
+
 const URL=`${process.env.NEXT_PUBLIC_API_URL}/colors`;
 
 const getColors = async (): Promise<Color[]> => {

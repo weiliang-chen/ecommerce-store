@@ -4,6 +4,8 @@ import { Product } from "@/types";
 
 const URL = `${process.env.NEXT_PUBLIC_API_URL}/products`;
 
+export const revalidate = 1;
+
 interface Query {
   categoryId?: string;
   colorId?: string;

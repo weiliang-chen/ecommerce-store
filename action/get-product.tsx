@@ -1,5 +1,7 @@
 import { Product } from "@/types";
 
+export const revalidate = 1;
+
 const URL = `${process.env.NEXT_PUBLIC_API_URL}/products`;
 
 const getProduct = async (id: string): Promise<Product> => {
